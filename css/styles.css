@@ -1,0 +1,222 @@
+body
+{
+    font-family: georgia;
+    background-color: #1F2429;
+	color: #FFFFFF;
+}
+
+div#background
+{
+    background-image: url('../images/header.jpg');
+    position: fixed;
+    z-index: -10;
+    top: 0;
+    left: 50%;
+    margin-left: -640px;
+    width: 1280px;
+    height: 500px;
+}
+
+h1
+{
+    font-size: 300%;
+    text-align: center;
+}
+
+h2
+{
+	color: #FFFFFF;
+	text-align: center;
+}
+
+h3
+{
+    padding: 0;
+    margin: 5px;
+}
+
+a
+{
+    color: inherit;
+}
+
+a img
+{
+	border: none;
+}
+
+.collapseSwitch
+{
+	font-size: small;
+	vertical-align: middle;
+	text-decoration: none;
+	outline: 1px solid;
+	font-family: "Lucida Console", "Courier New";
+	padding-left: 2px;
+	padding-right: 3px;
+	margin-right: 5px;
+}
+
+.noOverflow
+{
+	padding: 0;
+	padding-right: 1em;
+	margin: 0;
+	border: none;
+	height: 1.2em;
+	overflow: hidden;
+	position: relative;
+}
+
+span.ellipsis
+{
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: inherit;
+}
+
+.button
+{
+	cursor: pointer;
+}
+
+/*Table styles*/
+
+.maintable
+{
+    text-align: left;
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.maintable thead, .maintable tfoot
+{
+    height: 32px;
+    border: solid 1px #000000;
+    color: #FFFFFF;
+    background-color: #000080;
+}
+
+.maintable th, .maintable td
+{
+    padding: 2px 8px;
+}
+
+.maintable tr
+{
+	border: solid 1px #000000;
+	height: 1.6em;
+}
+
+.maintable tr.oddrow td
+{
+	background-image: url('../images/black-transparent.png');
+	color: #66AAFF;
+}
+
+.maintable tr.evenrow td
+{
+	background-image: url('../images/blue-transparent.png');
+	color: #FFFFFF;
+}
+
+#publicPlaylists td.user		{ width: 175px; }
+#publicPlaylists td.name		{ width: auto; }
+#publicPlaylists td.songs		{ width: 70px; }
+#publicPlaylists td.play		{ width: 50px; }
+
+#privatePlaylists td.name		{ width: auto; }
+#privatePlaylists td.songs		{ width: 70px; }
+#privatePlaylists td.play		{ width: 50px; }
+
+#fileSystemTable td.type		{ width: 100px; }
+#fileSystemTable td.name		{ width: auto; }
+#fileSystemTable td.size		{ width: 90px; }
+#fileSystemTable td.download	{ width: 70px; }
+
+#playlistTable td.track			{ width: 50px; }
+#playlistTable td.title			{ width: auto; }
+#playlistTable td.button		{ width: 16px; margin: 0; padding: 0px 4px; border: 0; }
+
+/* Dialog box styles */
+
+#dialogContainer
+{
+	visibility: hidden;
+	z-index: 1000;
+}
+
+#dialogContainer #dialogBackground
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	z-index: 999; background-color: #000000;
+}
+
+#dialogContainer #dialogBox
+{
+	width: 340px;
+	height: auto;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -170px;
+	margin-top: -130px;
+	background-color: #FFFFFF;
+	z-index: 1000;
+}
+
+#dialogContainer #dialogTitle
+{
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 8px;
+	background-color: #000080;
+	color: #FFFFFF;
+}
+
+#dialogContainer #dialogMessage
+{
+	margin: 60px 15px 70px 15px;
+}
+
+#dialogContainer #dialogTextBox
+{
+	margin: 20px;
+	width: 300px;
+	position: absolute;
+	bottom: 30px;
+}
+
+#dialogContainer #dialogFooter
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px 10px;
+	background-color: #000080;
+	text-align: right;
+}
+
+#dialogContainer #dialogFooter input[type=button], #dialogContainer #dialogFooter input[type=submit]
+{
+	width: 70px;
+}
