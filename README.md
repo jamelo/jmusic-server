@@ -38,7 +38,7 @@ Installation:
 
 1) run these queries on your database:
    <pre>
-   CREATE TABLE `$_POST[db_table_prefix]_users` (
+   CREATE TABLE `ms_users` (
      `user_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
      `username` varchar(20) NOT NULL,
      `password` varchar(32) NOT NULL,
@@ -47,7 +47,7 @@ Installation:
      UNIQUE KEY `username` (`username`)
    ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
    
-   CREATE TABLE `$_POST[db_table_prefix]_playlists` (
+   CREATE TABLE `ms_playlists` (
      `listID` int(12) unsigned NOT NULL AUTO_INCREMENT,
      `name` varchar(64) NOT NULL,
      `owner` varchar(32) NOT NULL,
