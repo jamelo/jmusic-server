@@ -302,7 +302,7 @@ foreach ($folder_contents as $x)
 	if ($x == ".") continue;
 	if ($x == "..") continue;
 	
-	if (is_dir("$current_directory\\$x"))
+	if (is_dir("$current_directory/$x"))
 		$directories[] = $x;
 	else
 		$files[] = $x;
